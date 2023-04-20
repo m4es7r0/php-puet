@@ -1,15 +1,6 @@
-<h2>This is the content section</h2>
+<h2 class="content_page_title">This is the content section</h2>
 
 <?php
-
-    // $arr = [
-    //     0 => 'v1',
-    //     '1' => 'v2',
-    //     'key123' => 'v3',
-    //     10 => 'v4',
-    //     3 => 'v5',       
-    // ];  
-    
     // var_dump($arr);
     // print_r($_GET);
 
