@@ -1,1 +1,1 @@
-<h1>laboratory</h1>
+<h1>Laboratory</h1>
