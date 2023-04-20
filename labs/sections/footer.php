@@ -1,1 +1,1 @@
-<h3>written by blablabla... with ❤️</h3>
+<h3>written with ❤️</h3>
