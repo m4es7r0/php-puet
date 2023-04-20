@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice 03</title>
+    <meta name="author" content="Dmytro Musiichenko">
+    <meta name="description" content="PHP course PUET">
+    <meta name="keywords" content="HTML, CSS, PHP, JavaScript">
 
+    <title>Practice</title>
+    
+    <link rel="shortcut icon" href="./assets/Official PHP Logo.svg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css?ver=<?= time(); ?>">
 </head>
 <body>
