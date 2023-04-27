@@ -48,9 +48,12 @@
             if($fileError === 0){
               if($fileSize < 500000){
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
-                $fileDestination = '../assets/images/'.$fileNameNew;
+                $fileDestination = "C:\MAMP\htdocs\practice\labs/assets/images/" .$fileNameNew;
+                if (!file_exists("C:\MAMP\htdocs\practice\labs/assets/images")) {
+                  mkdir("C:\MAMP\htdocs\practice\labs/assets/images");
+                } 
                 move_uploaded_file($fileTmpName, $fileDestination);
-                echo "<img src='$fileDestination' style='height: 1000px' />";
+                echo "<img src='../assets/images/$fileNameNew' style='height: 720px' />";
               } else {
                 echo "Your file is too big.";
               }

@@ -1,3 +1,7 @@
+<?php
+define("ASSETS", __DIR__ . '/assets/images');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,11 +35,3 @@
     </footer>
 </body>
 </html>
-
-
-<?php
-
-// echo 'Hello from PHP!<hr>';
-
-// include_once('sections/header.php');
-// include_once('sections/header.php');
