@@ -48,9 +48,9 @@
             if($fileError === 0){
               if($fileSize < 500000){
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
-                $fileDestination = 'images/'.$fileNameNew;
+                $fileDestination = '../assets/images/'.$fileNameNew;
                 move_uploaded_file($fileTmpName, $fileDestination);
-                echo "<img src='$fileDestination' style='height: 320px' />";
+                echo "<img src='$fileDestination' style='height: 1000px' />";
               } else {
                 echo "Your file is too big.";
               }
