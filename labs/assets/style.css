@@ -84,7 +84,9 @@ a:active {
   text-decoration: none;
 }
 
-table {
+/* Tables */
+
+.table-secont-task {
   align-self: center;
   background: #81a1c1;
   color: #eceff4;
@@ -93,11 +95,11 @@ table {
   font-size: 13px;
 }
 
-td {
+.table-secont-task td {
   padding: 0 8pxpx;
 }
 
-tr {
+.table-secont-task tr {
   display: flex;
   justify-content: space-between;
   flex: 0 1 auto;
@@ -107,11 +109,11 @@ tr {
   width: 100%;
 }
 
-tr:nth-child(even) {
+.table-secont-task tr:nth-child(even) {
   margin-bottom: 10px;
 }
 
-tr:last-child {
+.table-secont-task tr:last-child {
   margin: 0;
 }
 

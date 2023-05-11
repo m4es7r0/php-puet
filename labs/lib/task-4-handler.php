@@ -1,4 +1,16 @@
 <?php
+    $host = 'localhost';
+    $user = 'root';
+    $password = 'root';
+    $db = 'practice';
+    $port = 3306;
+    
+    $conn = new mysqli($host, $user, $password, $db, $port);
+    
+    if ($conn->connect_error) {
+        die('DB connection error: ' . $conn->connect_error);
+    }
+
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $name = isset($_POST['cf-name']) ? htmlspecialchars($_POST['cf-name']) : '';
         $email = isset($_POST['cf-email']) ? filter_var($_POST['cf-email'], FILTER_SANITIZE_EMAIL) : '';
@@ -7,6 +19,10 @@
         // 1
 
         if ($name && $email) {
+          if ($conn->query("INSERT INTO users (name, email, message) VALUES ('$name', '$email', '$message')") === true) {
+            echo "<p>**user created**</p>";
+          }
+
           echo "<p>Name: {$name}</p>";
           echo "<p>Email: {$email}</p>";
           echo "<p>Message: {$message}</p>";

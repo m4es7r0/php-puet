@@ -1,6 +1,6 @@
 <?php
 
-    echo '<table>';
+    echo '<table class="table-secont-task">';
       for ($tr=1; $tr <= 10; $tr++ ) {
     echo '<tr>';
       for ($td=1; $td <= 5; $td++) {
